@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo Sayangnya acuuu</title>
+    <style>
+        /* CSS */
+
+        /* Halaman Awal dan Akhir */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: white;
+            text-align: center;
+        }
+
+        .landing-page, .ending-page {
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .landing-page h1, .ending-page h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .landing-page p, .ending-page p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .landing-page button, .ending-page button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .landing-page button:hover, .ending-page button:hover {
+            background-color: #e0554f;
+        }
+
+        /* Slideshow */
+        .slideshow-container {
+            position: relative;
+            max-width: 80%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+
+        .slide {
+            display: none;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 3px;
+            user-select: none;
+            transform: translateY(-50%);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .dots {
+            margin: 20px auto;
+            text-align: center;
+            display: none;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: #717171;
+        }
+    </style>
+</head>
+<body>
+    <!-- Halaman Awal -->
+    <div class="landing-page" id="landing-page">
+        <h1>Alooo...</h1>
+        <p>Hii Alvian Gustianto, cowo yang pertama kali video call stranger tapi tingkahnya bikin mood banget hihii</p>
+ <p>First meet kita kulineran. ak punya banyak kenangan kitaa loo, kamu kepo nda? kalo kepo cobaa klikk dehh </p>
+        <button onclick="goToSlideshow()">klik disini!!</button>
+    </div>
+
+    <!-- Halaman Slideshow -->
+    <div class="slideshow-container" id="slideshow">
+        <!-- Slide 1 -->
+        <div class="slide">
+            <img src="foto1.jpg" alt="Foto 1">
+            <div class="caption">"Awal ketemu kulineran M blok hihi, first impression ak tuh kamu tinggi bangett yaolo...."</div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <img src="foto2.jpg" alt="Foto 2">
+            <div class="caption">"Hahaa.. nama cafe nya apa hayoo 😌."</div>
+        </div>
+
+  <!-- Slide 3 -->
+        <div class="slide">
+            <img src="foto5.jpg" alt="Foto 3">
+            <div class="caption">"Siapa yang awalnya bilang matcha itu rumput? hahaha tapi akhirnya kamu sukaaa kannn 🤭🤭."</div>
+        </div>
+
+  <!-- Slide 4 -->
+        <div class="slide">
+            <img src="gereja.jpg" alt="Foto 4">
+            <div class="caption">"Asikk koko ini akhirnyaa balikk ke papi J lagi. Kamu halusss lebihhh rajinn ya sygg... abis ini baptiss yaa!!"</div>
+        </div>
+
+  <!-- Slide 5 -->
+        <div class="slide">
+            <img src="jaksel.jpg" alt="Foto 5">
+            <div class="caption">"Udah jadi Anak jaksell bangett ini mahh hihii"</div>
+        </div>
+
+  <!-- Slide 6 -->
+        <div class="slide">
+            <img src="bogor.jpg" alt="Foto 6">
+            <div class="caption">"Maaci udah mau ak ajakin ke Bogor padahal jauh banget yaa hahaha..., kita harus rencanaan trip berikutnya yaaa!!"</div>
+        </div>
+
+  <!-- Slide 7 -->
+        <div class="slide">
+            <img src="gbk.jpg" alt="Foto 7">
+            <div class="caption">"Asikk kulineran lagi, kamuu mam baksoo pedess sampe keringetann  cuu banget yaolooo hahahaha. lain kali kamu gabole mam pedess lagiiii yaa!!!"</div>
+        </div>
+
+  <!-- Slide 8 -->
+        <div class="slide">
+            <img src="vian.jpg" alt="Foto 8">
+            <div class="caption">"Ak masih simpan fotoo kamu looo... koko koko ini pokoknya punyaa ak :)"</div>
+        </div>
+
+  <!-- Slide 9 -->
+        <div class="slide">
+            <img src="foto6.jpg" alt="Foto 9">
+            <div class="caption">"Asikk natalan ak punya gandengannn hahaha 🤭🤭."</div>
+        </div>
+
+
+        <!-- Slide 10 -->
+        <div class="slide">
+            <img src="natal.jpg" alt="Foto 10">
+            <div class="caption">"ciee ciee yang salting parahh mau kasihh link. hahaaa.. tapi lucuu bangett kamu yaoloo - 22 Desember 2024?"</div>
+        </div>
+
+        <!-- Tombol navigasi -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots -->
+    <div class="dots" id="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+
+ <span class="dot" onclick="currentSlide(3)"></span>
+
+ <span class="dot" onclick="currentSlide(4)"></span>
+
+ <span class="dot" onclick="currentSlide(5)"></span>
+
+ <span class="dot" onclick="currentSlide(6)"></span>
+
+ <span class="dot" onclick="currentSlide(7)"></span>
+
+ <span class="dot" onclick="currentSlide(8)"></span>
+
+ <span class="dot" onclick="currentSlide(9)"></span>
+
+        <span class="dot" onclick="currentSlide(10)"></span>
+    </div>
+
+    <!-- Halaman Akhir -->
+    <div class="ending-page" id="ending-page" style="display: none;">
+        <h1>Maaci sygg 😘</h1>
+        <p>maaci udhh ada di warnain halii halii ak. maacii udh syg samaa ak. kamuu nda boleee berubahhh yaa.</p>
+<p>Happy MonthSarry Sayang!!</p>
+        <button onclick="restart()">ulang lagi!!</button>
+    </div>
+
+    <script>
+        // JavaScript
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Fungsi untuk mengganti slide dengan tombol
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Fungsi untuk menuju slide tertentu (dot)
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        // Menampilkan slide sesuai index
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) { 
+                goToEndingPage(); 
+                return;
+            }
+            if (n < 1) { slideIndex = slides.length; }
+
+            // Sembunyikan semua slide
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Hapus kelas 'active' dari semua dot
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        // Fungsi untuk berpindah ke slideshow
+        function goToSlideshow() {
+            document.getElementById("landing-page").style.display = "none";
+            document.getElementById("slideshow").style.display = "block";
+            document.getElementById("dots").style.display = "block";
+        }
+
+        // Fungsi untuk berpindah ke halaman akhir
+        function goToEndingPage() {
+            document.getElementById("slideshow").style.display = "none";
+            document.getElementById("dots").style.display = "none";
+            document.getElementById("ending-page").style.display = "flex";
+        }
+
+        // Fungsi untuk kembali ke halaman awal
+        function restart() {
+            document.getElementById("ending-page").style.display = "none";
+            document.getElementById("landing-page").style.display = "flex";
+            slideIndex = 1;
+            showSlides(slideIndex);
+        }
+    </script>
+</body>
+</html>
+
